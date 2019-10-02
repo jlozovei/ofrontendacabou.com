@@ -4,7 +4,9 @@
   "description": "O Front-end acabou?",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "predeploy": "cp ./README.md ./public && cp ./CNAME ./public",
+    "deploy": "gh-pages -d public",
+    "postdeploy": "rm -rf ./public/README.md && rm -rf ./public/CNAME"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/jlozovei/ofrontendacabou.com/issues"
   },
-  "homepage": "https://github.com/jlozovei/ofrontendacabou.com#readme"
+  "homepage": "https://github.com/jlozovei/ofrontendacabou.com#readme",
+  "dependencies": {
+    "gh-pages": "^2.1.1"
+  }
 }
