@@ -2,7 +2,7 @@
   "name": "ofrontendacabou.com",
   "version": "0.0.1",
   "description": "O Front-end acabou?",
-  "main": "index.js",
+  "main": "",
   "scripts": {
     "predeploy": "cp ./README.md ./public && cp ./CNAME ./public",
     "deploy": "gh-pages -d public",
